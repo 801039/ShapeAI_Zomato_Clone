@@ -1,0 +1,122 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box; /*To box model for safari and operamini*/
+}
+
+body{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: #ebf2ff;
+}
+
+.button_primary{
+    background: linear-gradient(to right, #ff512f 0%, #dd2476 51%,#ff512f 100%);
+    color:#fff;
+    border: none;
+    padding: 12px;
+    cursor: pointer;
+    transition: 0.5s;
+    border-radius: 3px;
+}
+
+.button_primary :hover{
+    border: 2px solid pink;
+}
+
+.container{
+    max-width: 100%;
+    padding:0 20px;
+    margin:0px auto; 
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: white;
+}
+
+.navbar_brand{
+    width: 100px;
+    /* height: 100px; */
+}
+
+.navbar_logo{
+    width: 100%;
+    /* height: 100%; */
+}
+
+.nav_item{
+    background: linear-gradient(to right, #ff512f 0%, #dd2476 51%,#ff512f 100%);
+    color:#fff;
+    border: none;
+    padding: 12px;
+    cursor: pointer;
+    transition: 0.5s;
+    border-radius: 3px;
+}
+
+.nav_item :hover{
+    border: 2px solid pink;
+}
+
+@media screen and (min-width:768px) {
+    .navbar{
+        justify-content:space-between;
+        padding:5px 30px; 
+    }
+
+    .hero_container{
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        margin-top: 20px;
+    }
+}
+
+@media screen and (min-width:1020px){
+    .navbar_brand{
+        width:150px;
+    }
+    .button_primary{
+        padding:20px;
+        font-size: 20px;
+    }
+
+    .hero_description{
+        width: 100%;
+    }
+
+    .container{
+        max-width: 900px;
+    }
+
+    .hero_text{
+        font-size: 50px;
+    }
+}
+
+@media screen and (min-width:1400px){
+    max-width: 1250px;
+}
+
+.hero_image_container{
+    width: 100%;
+}
+
+.hero_image{
+    position: relative;
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
+.hero_pink_back{
+    position:absolute;
+}
+
+.hero_text{
+    font-size: 30px;
+    margin: 20px 0;
+}
+
